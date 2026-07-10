@@ -135,3 +135,14 @@ console.log(phraseMajuscules); // "TOUT LES VOITURES SONT BELLES"
 let phrase8 = "   akory,ao tsara ve e ?   ";
 let phraseTrimmed = phrase8.trim();
 console.log(phraseTrimmed); // "akory,ao tsara ve e  ?"
+
+
+/* methode d'utilisation de includes*/
+let phrase9 = "Salama daholo, ao tsara ve ?";
+let contientBonjour = phrase9.includes("salama");
+console.log(contientBonjour); // trueao tsara
+
+/*methode d'utilisation de indexOf*/ 
+let phrase10 = "salama tompoko, ao tsara ve ?";
+let index = phrase10.indexOf("tompoko");
+console.log(index); // 7    
