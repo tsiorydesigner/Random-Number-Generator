@@ -107,6 +107,31 @@ let mots2 = ["Bonjour,", "comment", "ça", "va", "?"];
 let phrase2 = mots2.join(" ");
 console.log(phrase2); // "Bonjour, comment ça va ?"
 
-let mots3 =["Hello", "_", "je suis un", "développeur"];
+let mots3 =["Hello", "_", "je suis","_un","_","développeur"];
 let phrase3 = mots3.join("");
 console.log(phrase3); // "Hello je suis un développeur"
+
+/* methode d'utilisation de replace*/
+let phrase4 = "Hello, comment ça va boobo?";
+let nouvellePhrase = phrase4.replace("bonjour", "Salut");
+console.log(nouvellePhrase); // "Salut, comment ça va ?"
+
+/* methode d'utilisation de replaceAll*/
+let phrase5 = "Guten tag, comment ça va boobo?";
+let nouvellePhrase2 = phrase5.replaceAll("boobo", "mon ami");
+console.log(nouvellePhrase2); // "Hello, comment ça va mon ami?"
+
+/* methode d'utilisation de toUpperCase*/
+let phrase7 = "Tout les voitures sont belles";
+let phraseMinuscules = phrase7.toLowerCase();
+console.log(phraseMinuscules); // "tout les voitures sont belles"
+
+/* methode d'utilisation de toLowerCase*/
+let phrase6 = "Tout les voitures sont belles";
+let phraseMajuscules = phrase6.toUpperCase();
+console.log(phraseMajuscules); // "TOUT LES VOITURES SONT BELLES"
+
+/* methode d'utilisation de trim*/
+let phrase8 = "   akory,ao tsara ve e ?   ";
+let phraseTrimmed = phrase8.trim();
+console.log(phraseTrimmed); // "akory,ao tsara ve e  ?"
