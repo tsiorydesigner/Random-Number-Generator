@@ -140,9 +140,57 @@ console.log(phraseTrimmed); // "akory,ao tsara ve e  ?"
 /* methode d'utilisation de includes*/
 let phrase9 = "Salama daholo, ao tsara ve ?";
 let contientBonjour = phrase9.includes("salama");
-console.log(contientBonjour); // trueao tsara
+console.log(contientBonjour); // true ao tsara
 
 /*methode d'utilisation de indexOf*/ 
 let phrase10 = "salama tompoko, ao tsara ve ?";
 let index = phrase10.indexOf("tompoko");
-console.log(index); // 7    
+console.log(index); // 7   
+
+
+/* methode d'utilisation de slice*/
+let phrase11 = "Bonjour, comment ça va ?";
+let sousChaine = phrase11.slice(9,20);
+console.log(sousChaine); // "comment"
+ 
+/* methode d'utilisation de substring*/
+let phrase12 = "Bonjour, Bobo ?";
+let sousChaine2 = phrase12.substring(9, 20);
+console.log(sousChaine2); // "comment"
+
+/* methode d'utilisation de charAt*/
+let phrase13 = "Bobo, on y va  ?";
+let caractere = phrase13.charAt(7);
+console.log(caractere); // "c"
+/* methode d'utilisation de charCodeAt*/
+ let phrase14 = "Test, On y va ?";
+ let caratere = phrase14.charAt(7);
+ console.log(caratere); // "O"
+ /* methode d'utilisation de concat*/
+let phrase15 = "Andriankova, ";
+let phrase16 = "Rakotovao?";
+let phraseConcatenee = phrase15.concat(phrase16);
+console.log(phraseConcatenee); // "Andriankova, Rakotovao?"
+
+/* condition else if*/
+let age = 20;
+if (age < 18) {
+    console.log("Vous êtes mineur.");
+} else if (age >= 18 && age < 60) {
+    console.log("Vous êtes adulte.");
+} else {
+    console.log("Vous êtes senior.");
+}
+
+/*condition else if age mineur et adulte*/
+
+// let age =  15;
+// if (age < 18) {
+//     console.log("Vous êtes mineur.");
+// } else if (age >= 18 && age < 60) {
+//     console.log("Vous êtes adulte.");
+// } else {
+//     console.log("Vous êtes senior.");
+// }
+
+
